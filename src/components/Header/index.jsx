@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/logodio.jpg";
+import logo from "../../assets/logo-dio.png";
 import { Button } from "../Button";
 
 import {
@@ -24,15 +24,15 @@ const Header = () => {
                 <Row>
                     <img src={logo} alt="logo da dio" />
                     <BuscarInputContainer>
-                        <Input placeholder="Buscar" />
+                        <Input placeholder="Busca..." />
                     </BuscarInputContainer>
                     <Menu>Live Code</Menu>
                     <Menu>Global</Menu> 
                 </Row>
                 <Row>
                     <MenuRight href="#">Home</MenuRight>
-                    <Button title="Entrar" />
-                    <Button title="Cadastrar" />
+                    <Button title="Entrar" variant="secondary" />
+                    <Button title="Cadastrar" variant="secondary" />
                 </Row>                
             </Container>
         </Wrapper>
@@ -42,4 +42,4 @@ const Header = () => {
 
 
 }
-export {Header}
+export { Header }
