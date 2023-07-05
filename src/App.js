@@ -2,13 +2,14 @@ import {
 
   BrowserRouter as Router,
   Routes,
-  Route, 
+  Route,
 
 } from "react-router-dom";
 
 import { Home } from "./pages/home";
 import { Login } from "./pages/login";
 import { Feed } from "./pages/feed";
+
 function App() {
   return (
    <Router>
@@ -16,7 +17,7 @@ function App() {
       
         <Route path="/" element={ <Home /> } />
         <Route path="/Login" element={ <Login /> } />
-        <Route path="/feed" element={ <feed /> } />
+        <Route path="/feed" element={ <Feed /> } />
 
       </Routes>
    </Router>

@@ -1,17 +1,17 @@
-import React from "react";
-import {FiThumbsUp} from 'react-icons/fi'; 
+import React from 'react'
+import {FiThumbsUp} from 'react-icons/fi' 
 
-import {CardContainer, Content, HasInfo, Imagebackground, PostInfo, UserInfo, UserPicture} from "./styles";
+import { CardContainer, Content, HasInfo, ImageBackground, PostInfo, UserInfo, UserPicture } from './styles'
 
 const Card = () => {
 
     return (
 
         <CardContainer>
-            <Imagebackground />
+            <ImageBackground src="https://hermes.dio.me/articles/cover/2a95c7be-71e3-48e3-b4ed-a50127b94a9a.jpg" />
             <Content>
                 <UserInfo>
-                    <UserPicture />
+                    <UserPicture src="https://avatars.githubusercontent.com/u/87847070?v=4" />
                     <div>
                         <h4>Vinicius DEV</h4>
                         <p>Há 8 minutos</p>
@@ -34,4 +34,4 @@ const Card = () => {
 
 }
 
-export { Card }
+export { Card };

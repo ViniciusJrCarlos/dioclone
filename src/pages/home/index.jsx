@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+/* eslint-disable no-unused-vars */
+import {useNavigate} from "react-router-dom";
 import bannerImage from "../../assets/banner.png";
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
@@ -6,6 +7,12 @@ import { Header } from "../../components/Header";
 import {Container, TextContent, Title, TitleHighlight} from "./styles";
 //import { Button } from "../../components/Button";
 const Home = () => {
+    const navigate = useNavigate();
+    const handleClickSignIn = () => {
+
+      navigate('/login')
+
+    }
 
     return (<>
     
@@ -25,7 +32,7 @@ const Home = () => {
               </TextContent>
 
             
-              <Button title="Começar agora" />
+              <Button title="Começar agora"  onClick={handleClickSignIn} />
 
         </div>
         <div>
