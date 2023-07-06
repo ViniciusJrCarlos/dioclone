@@ -12,7 +12,7 @@ const Login = () => {
     const navigate = useNavigate();
     const handleClickSignIn = () => {
 
-      navigate('/login')
+      navigate('/feed')
 
     }
 

@@ -15,7 +15,7 @@ import {
     Wrapper
 } from "./styles";
 
-const Header = () => {
+const Header = ({autenticado}) => {
 
     
     const navigate = useNavigate();
@@ -31,16 +31,28 @@ const Header = () => {
             <Container>
                 <Row>
                     <img src={logo} alt="logo da dio" />
-                    <BuscarInputContainer>
-                        <Input placeholder="Busca..." />
-                    </BuscarInputContainer>
-                    <Menu>Live Code</Menu>
-                    <Menu>Global</Menu> 
+                    {autenticado ? (
+                        <>
+                        <BuscarInputContainer>
+                            <Input placeholder="Busca..." />
+                        </BuscarInputContainer>
+                        <Menu>Live Code</Menu>
+                        <Menu>Global</Menu> 
+                        </>
+                    ): null }
                 </Row>
                 <Row>
-                    <MenuRight href="#">Home</MenuRight>
-                    <Button title="Entrar" variant="secondary" onClick={ handleClickSignIn } type="button"  />
-                    <Button title="Cadastrar" variant="secondary" />
+                    {autenticado ? (
+                        <UserPicture src="https://avatars.githubusercontent.com/u/87847070?v=4"/>
+
+                         ) : (
+
+                        <>
+                        <MenuRight href="#">Home</MenuRight>
+                        <Button title="Entrar" variant="secondary" onClick={ handleClickSignIn } type="button"  />
+                        <Button title="Cadastrar" variant="secondary" />
+                        </>
+                    )}          
                 </Row>                
             </Container>
         </Wrapper>
