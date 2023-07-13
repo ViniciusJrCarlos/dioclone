@@ -4,7 +4,7 @@ import bannerImage from "../../assets/banner.png";
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 
-import {Container, TextContent, Title, TitleHighlight} from "./styles";
+import { Container, TextContent, Title, TitleHighlight } from "./styles";
 //import { Button } from "../../components/Button";
 const Home = () => {
     const navigate = useNavigate();
@@ -32,7 +32,7 @@ const Home = () => {
               </TextContent>
 
             
-              <Button title="Começar agora"  onClick={handleClickSignIn} />
+              <Button variant="secondary" title="Começar agora"  onClick={handleClickSignIn} />
 
         </div>
         <div>

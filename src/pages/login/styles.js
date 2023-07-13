@@ -20,6 +20,9 @@ export const Wrapper = styled.div`
 
 
 `
+
+
+
 export const Column = styled.div`
 
     flex: 1;
@@ -40,7 +43,7 @@ export const Row = styled.div`
 
 export const Title = styled.h2`
 
-    font-family: 'Open-Sans';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -54,7 +57,7 @@ export const Title = styled.h2`
 
 export const TitleLogin = styled.p`
 
-    font-family: 'Open-Sans';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -64,7 +67,7 @@ export const TitleLogin = styled.p`
 `
 export const SubtitleLogin = styled.p`
 
-    font-family: 'Open-Sans';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -86,7 +89,7 @@ export const EsqueciText = styled.p`
 
 export const CriarText = styled.p`
 
-    font-family: 'Open-Sans';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;

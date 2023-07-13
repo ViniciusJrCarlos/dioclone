@@ -11,7 +11,7 @@ import { Login } from "./pages/login";
 import { Feed } from "./pages/feed";
 
 function App() {
-  return (
+  return (<>
    <Router>
       <Routes>
       
@@ -22,7 +22,7 @@ function App() {
       </Routes>
    </Router>
 
-  );
+   </>);
 }
 
 export default App;

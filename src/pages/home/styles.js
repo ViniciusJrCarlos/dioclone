@@ -15,7 +15,7 @@ export const Container = styled.main`
 `
 export const Title = styled.h2`
 
-    font-family: 'Open-Sans';
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
