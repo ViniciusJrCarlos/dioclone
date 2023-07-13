@@ -9,7 +9,9 @@ import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { Input } from "../../components/Input";
 
-import {Column, Container, CriarText, EsqueciText, Row, SubtitleLogin, Title, TitleLogin, Wrapper} from "./styles";
+import { api } from "../../services/api";
+
+import { Column, Container, CriarText, EsqueciText, Row, SubtitleLogin, Title, TitleLogin, Wrapper } from "./styles";
 //import { MdEmail, MdLock } from 'react-icons/md'
 
 const schema = yup.object({
@@ -31,17 +33,38 @@ const Login = () => {
 
     
 
-    const { control, handleSubmit, formState: { errors, isValid } } = useForm({
+    const { control, handleSubmit, formState: { errors } } = useForm({
 
       resolver: yupResolver(schema),
       mode: 'onChange',
 
     });
 
-    console.log(isValid, errors);
+    //console.log(isValid, errors);
 
-    const  onSubmit = data => console.log(data);
+    //const  onSubmit = data => console.log(data);
 
+    const onSubmit = async formData => {
+      try{
+
+        const { data } = await api.get(`users?email=${formData.email}&senha=${formData.password}`);
+
+        //console.log('retorno api', data);
+        if(data.length === 1) {
+
+          navigate('/feed');
+
+        }else {
+
+          alert('Email ou Senha inválido.');
+
+        }
+      }catch{
+
+        alert("Houve um erro, tente novamente.")
+
+      }
+    };
    
 
     return (<>

@@ -5,7 +5,6 @@ import {useNavigate } from "react-router-dom";
 import {
 
     BuscarInputContainer,
-    Column,
     Container,
     Input, 
     Menu,
@@ -31,28 +30,25 @@ const Header = ({autenticado}) => {
             <Container>
                 <Row>
                     <img src={logo} alt="logo da dio" />
-                    {autenticado ? (
-                        <>
+                    {autenticado ? (<>
                         <BuscarInputContainer>
                             <Input placeholder="Busca..." />
                         </BuscarInputContainer>
                         <Menu>Live Code</Menu>
                         <Menu>Global</Menu> 
-                        </>
-                    ): null }
+                        
+                        </>): null }
                 </Row>
                 <Row>
                     {autenticado ? (
                         <UserPicture src="https://avatars.githubusercontent.com/u/87847070?v=4"/>
 
-                         ) : (
-
-                        <>
+                         ) : (<>
                         <MenuRight href="#">Home</MenuRight>
                         <Button title="Entrar" variant="secondary" onClick={ handleClickSignIn } type="button"  />
                         <Button title="Cadastrar" variant="secondary" />
-                        </>
-                    )}          
+                        
+                        </>)}          
                 </Row>                
             </Container>
         </Wrapper>
