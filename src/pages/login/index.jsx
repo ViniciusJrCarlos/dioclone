@@ -61,7 +61,7 @@ const Login = () => {
               
               <Input name="email" errorMessage={errors?.email?.message} control={control} placeholder="digite seu email...." leftIcon={<MdEmail/>} />
               <Input name="password" errorMessage={errors?.password?.message} control={control} placeholder="digite sua senha...." type="password" leftIcon={<MdLock />} />
-              <Button title="Entrar" type="submit" />
+              <Button title="Entrar" type="submit" variant="secondary" onClick={handleClickSignIn} />
             
             </form>
             <Row>
