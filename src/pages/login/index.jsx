@@ -12,6 +12,8 @@ import { Input } from "../../components/Input";
 
 import { api } from "../../services/api";
 
+
+
 import { Column, Container, CriarText, EsqueciText, Row, SubtitleLogin, Title, TitleLogin, Wrapper } from "./styles";
 //import { MdEmail, MdLock } from 'react-icons/md'
 
@@ -20,7 +22,7 @@ const schema = yup.object({
   email: yup.string().email('email não é válido').required('Campo obrigatório'),
   password: yup.string().min(3, 'No minimo 3 caracteres').required('Campo obrigatório'),
 
-}).required;
+});
 
 const Login = () => {
 
@@ -38,7 +40,7 @@ const Login = () => {
     const { control, handleSubmit,  formState: { errors } } = useForm({
 
       resolver: yupResolver(schema),
-      mode: 'onChange'
+      mode: 'onChange',
 
     });
 

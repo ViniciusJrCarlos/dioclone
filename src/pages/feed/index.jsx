@@ -39,9 +39,9 @@ const Feed = () => {
       </Container>
   
     
-    </>)
+    </>);
       
 
-}
+};
 
-export { Feed }
+export { Feed };
