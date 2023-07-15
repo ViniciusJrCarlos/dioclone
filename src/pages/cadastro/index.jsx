@@ -16,10 +16,12 @@ import { Column, Container, Row, SubtitleLogin, Title, TitleLogin, Wrapper } fro
 
 const schema = yup.object({
 
+  nome: yup.string( 'nome não é válido').required('Campo obrigatório'),
+  usuario: yup.string( 'usuario não é válido').required('Campo obrigatório'),
   email: yup.string().email('email não é válido').required('Campo obrigatório'),
   password: yup.string().min(3, 'No minimo 3 caracteres').required('Campo obrigatório'),
 
-}).required;
+});
 
 const Cadastro = () => {
 
@@ -43,16 +45,17 @@ const Cadastro = () => {
     const onSubmit = async formData => {
       try{
 
-        const { data } = await api.get(`users?email=${formData.email}&senha=${formData.password}`);
+        const { data } = await api.get(`users?name=${formData.nome}&usuario=${formData.usuario}&email=${formData.email}&senha=${formData.password}`);
 
         //console.log('retorno api', data);
         if(data.length === 1) {
 
-          navigate('/feed')
+          alert('Cadastro efetuado com Sucesso!')
+          navigate('/login')
 
         }else {
 
-          alert('Email ou Senha inválido.')
+          alert('Preencha corretamente o formulario.')
 
         }
       }catch{
@@ -61,7 +64,7 @@ const Cadastro = () => {
 
       }
     };
-   
+ 
     return (<>
       <Header />
       <Container>
