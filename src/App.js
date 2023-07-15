@@ -9,6 +9,7 @@ import {
 import { Home } from "./pages/home";
 import { Login } from "./pages/login";
 import { Feed } from "./pages/feed";
+import { Cadastro } from "./pages/cadastro";
 
 function App() {
   return (<>
@@ -17,12 +18,13 @@ function App() {
       
         <Route path="/" element={ <Home /> } />
         <Route path="/Login" element={ <Login /> } />
+        <Route path="/cadastro" element={ <Cadastro/> } />
         <Route path="/feed" element={ <Feed /> } />
 
       </Routes>
    </Router>
 
    </>);
-}
+};
 
 export default App;

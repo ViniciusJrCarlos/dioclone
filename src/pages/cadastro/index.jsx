@@ -1,10 +1,9 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import { MdEmail, MdLock } from "react-icons/md";
+import {useNavigate} from "react-router-dom";
+import { MdEmail, MdLock, MdVerifiedUser } from "react-icons/md";
 //import {useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
@@ -12,7 +11,7 @@ import { Input } from "../../components/Input";
 
 import { api } from "../../services/api";
 
-import { Column, Container, CriarText, EsqueciText, Row, SubtitleLogin, Title, TitleLogin, Wrapper } from "./styles";
+import { Column, Container, Row, SubtitleLogin, Title, TitleLogin, Wrapper } from "./styles";
 //import { MdEmail, MdLock } from 'react-icons/md'
 
 const schema = yup.object({
@@ -22,15 +21,10 @@ const schema = yup.object({
 
 }).required;
 
-const Login = () => {
+const Cadastro = () => {
 
   const navigate = useNavigate();
 
-  const handleClickSignIn = () => {
-
-    navigate('/cadastro');
-
-  };
 
 
     
@@ -38,7 +32,7 @@ const Login = () => {
     const { control, handleSubmit,  formState: { errors } } = useForm({
 
       resolver: yupResolver(schema),
-      mode: 'onChange'
+      mode: 'onChange',
 
     });
 
@@ -68,40 +62,35 @@ const Login = () => {
       }
     };
    
-    return (
-    
-    <>
+    return (<>
       <Header />
       <Container>
         <Column>
                   <Title>  
-                        A plataforma para você aprender com experts, dominar as principais tecnologias e entrar mais rápido nas empresas mais desejadas.
+                        Faça seu Cadastro na Plataforma Dio Innovation, totalmente gratuita. 
                   </Title>
               
         </Column>
         <Column>
           <Wrapper>
-            <TitleLogin>Faça seu Login!</TitleLogin>
-            <SubtitleLogin>Faça seu login e make the change._</SubtitleLogin>
+            <TitleLogin>Cadastre-se Já!</TitleLogin>
+            <SubtitleLogin>Faça seu cadastro e make the change._</SubtitleLogin>
             <form onSubmit={handleSubmit(onSubmit)}>
-              
-              <Input name="email" errorMessage={errors?.email?.message} control={control} placeholder="digite seu email...." type="text" leftIcon={<MdEmail/>} />
+              <Input name="nome" errorMessage={errors?.nome?.message} control={control} placeholder="digite seu nome...." leftIcon={<MdVerifiedUser/>} />
+              <Input name="usuario" errorMessage={errors?.usuario?.message} control={control} placeholder="digite seu nome de usuario...." leftIcon={<MdVerifiedUser/>} />
+              <Input name="email" errorMessage={errors?.email?.message} control={control} placeholder="digite seu email...." leftIcon={<MdEmail/>} />
               <Input name="password" errorMessage={errors?.password?.message} control={control} placeholder="digite sua senha...." type="password" leftIcon={<MdLock />} />
-              <Button title="Entrar" type="submit" variant="secondary"     />
+              <Button title="Cadastrar" type="submit" variant="secondary"     />
             
             </form>
             <Row>
-              <EsqueciText>Esqueci minha senha!</EsqueciText>
-              <CriarText onClick={handleClickSignIn} >Faça sua conta!</CriarText>
             </Row>
           </Wrapper>
         </Column>
       </Container>
      
-     </>
-     
-     );
+     </>);
 
 };
 
-export { Login };
+export { Cadastro };

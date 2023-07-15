@@ -3,7 +3,7 @@ import React from "react";
 import { Container, NameText, Progress, UserPicture } from "./styles";
 const UserInfo = ({nome, image, percentual}) => {
 
-    return (
+    return (<>
 
         <Container>
             <UserPicture src={image} />
@@ -14,9 +14,9 @@ const UserInfo = ({nome, image, percentual}) => {
         </Container>
 
 
-    )
+        </> );
 
 
-}
+};
 
-export { UserInfo }
+export { UserInfo };

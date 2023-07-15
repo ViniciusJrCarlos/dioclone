@@ -10,9 +10,9 @@ const Home = () => {
     const navigate = useNavigate();
     const handleClickSignIn = () => {
 
-      navigate('/login')
+      navigate('/login');
 
-    }
+    };
   
     return (<>
     
@@ -32,7 +32,7 @@ const Home = () => {
               </TextContent>
 
             
-              <Button variant="secondary" title="Começar agora"  onClick={handleClickSignIn} />
+              <Button title="Começar agora" variant="secondary"  onClick={handleClickSignIn} />
 
         </div>
         <div>
@@ -40,8 +40,8 @@ const Home = () => {
         </div>
       </Container>
      
-     </>)
+     </>);
 
-}
+};
 
-export { Home }
+export { Home };
