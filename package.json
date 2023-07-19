@@ -29,7 +29,7 @@
     "eject": "react-scripts eject",
     "api": "json-server --watch db.json -p 8001",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
