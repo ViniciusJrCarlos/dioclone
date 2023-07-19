@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/ViniciusJrCarlos/dioclone/static/js/main.bc81d20a.js",
-    "static/media/banner.png": "/ViniciusJrCarlos/dioclone/static/media/banner.9ab4ead1c68ede88f1ce.png",
-    "index.html": "/ViniciusJrCarlos/dioclone/index.html",
-    "main.bc81d20a.js.map": "/ViniciusJrCarlos/dioclone/static/js/main.bc81d20a.js.map"
+    "main.js": "/static/js/main.adc0af87.js",
+    "static/media/banner.png": "/static/media/banner.9ab4ead1c68ede88f1ce.png",
+    "index.html": "/index.html",
+    "main.adc0af87.js.map": "/static/js/main.adc0af87.js.map"
   },
   "entrypoints": [
-    "static/js/main.bc81d20a.js"
+    "static/js/main.adc0af87.js"
   ]
 }
