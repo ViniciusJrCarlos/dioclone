@@ -1,8 +1,9 @@
 {
   "name": "dioclone",
   "version": "0.1.0",
-  "homepage": "https://viniciusjrcarlos.github.io/dioclone",
   "private": true,
+  "homepage": "https://viniciusjrcarlos.github.io/dioclone",
+  
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
     "@testing-library/jest-dom": "^5.16.5",
