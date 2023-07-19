@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/dioclone/static/js/main.ba3a337b.js",
-    "static/media/banner.png": "/dioclone/static/media/banner.9ab4ead1c68ede88f1ce.png",
-    "index.html": "/dioclone/index.html",
-    "main.ba3a337b.js.map": "/dioclone/static/js/main.ba3a337b.js.map"
+    "main.js": "/static/js/main.adc0af87.js",
+    "static/media/banner.png": "/static/media/banner.9ab4ead1c68ede88f1ce.png",
+    "index.html": "/index.html",
+    "main.adc0af87.js.map": "/static/js/main.adc0af87.js.map"
   },
   "entrypoints": [
-    "static/js/main.ba3a337b.js"
+    "static/js/main.adc0af87.js"
   ]
 }
