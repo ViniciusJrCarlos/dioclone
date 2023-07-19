@@ -2,8 +2,9 @@
   "name": "dioclone",
   "private": true,
   "version": "0.1.0",
-  "homepage": "/",
-
+  "homepage": ".",
+  "start_url": "https://viniciusjrcarlos.github.io/dioclone",
+  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -13,7 +14,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -33,11 +33,9 @@
     "web-vitals": "^2.1.4",
     "yup": "^1.2.0"
   },
-
   "devDependencies": {
     "gh-pages": "^5.0.0"
   },
-
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -56,5 +54,4 @@
       "last 1 safari version"
     ]
   }
-  
 }
