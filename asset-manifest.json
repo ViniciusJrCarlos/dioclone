@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "./https://viniciusjrcarlos.github.io/dioclone/static/js/main.cac03c54.js",
-    "static/media/banner.png": "./https://viniciusjrcarlos.github.io/dioclone/static/media/banner.9ab4ead1c68ede88f1ce.png",
-    "index.html": "./https://viniciusjrcarlos.github.io/dioclone/index.html",
-    "main.cac03c54.js.map": "./https://viniciusjrcarlos.github.io/dioclone/static/js/main.cac03c54.js.map"
+    "main.js": "/dioclone/static/js/main.dee355f8.js",
+    "static/media/banner.png": "/dioclone/static/media/banner.9ab4ead1c68ede88f1ce.png",
+    "index.html": "/dioclone/index.html",
+    "main.dee355f8.js.map": "/dioclone/static/js/main.dee355f8.js.map"
   },
   "entrypoints": [
-    "static/js/main.cac03c54.js"
+    "static/js/main.dee355f8.js"
   ]
 }
