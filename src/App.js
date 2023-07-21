@@ -1,10 +1,12 @@
-import {
+//import {
 
-  BrowserRouter as Router,
-  Routes,
-  Route,
+  //BrowserRouter as Router,
+  //Routes,
+  //Route,
 
-} from "react-router-dom";
+//} from "react-router-dom";
+
+import {Routes, Route, HashRouter} from 'react-router-dom';
 
 import { Home } from "./pages/home";
 import { Login } from "./pages/login";
@@ -13,7 +15,7 @@ import { Cadastro } from "./pages/cadastro";
 
 function App() {
   return (<>
-   <Router>
+    <HashRouter>
       <Routes>
       
         <Route path="/" element={ <Home /> } />
@@ -22,7 +24,7 @@ function App() {
         <Route path="/feed" element={ <Feed /> } />
 
       </Routes>
-   </Router>
+   </HashRouter>
 
    </>);
 };

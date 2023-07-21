@@ -31,6 +31,13 @@ const Header = ({autenticado}) => {
 
     }
 
+    const handleClickSignIn3 = () => {
+
+        navigate('/');
+
+    }
+
+
     return (
 
         <Wrapper>
@@ -53,7 +60,7 @@ const Header = ({autenticado}) => {
                          ) : (
                          <>
                         
-                        <MenuRight href={"/"} >HOME</MenuRight>
+                        <MenuRight onClick={handleClickSignIn3} >HOME</MenuRight>
                         <Button title="Entrar" variant="secondary" onClick={ handleClickSignIn } type="button"  />&nbsp;&nbsp;&nbsp;&nbsp;
                         <Button title="Cadastrar" variant="secondary" onClick={ handleClickSignIn2 } type="button" />
                         

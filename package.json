@@ -1,10 +1,8 @@
 {
+  "homepage": "https://viniciusjrcarlos.github.io/dioclone",
   "name": "dioclone",
   "private": true,
   "version": "0.1.0",
-  "homepage": ".",
-  "start_url": "https://viniciusjrcarlos.github.io/dioclone",
-  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
